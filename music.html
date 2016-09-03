@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Your People" content="">
+    <meta name="Billy Wong" content="">
+
+    <title>Your People</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/your-people.css" rel="stylesheet">
+
+    <!-- LightSlider CSS -->
+    <link href="css/lightslider.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700,900,400,500' rel='stylesheet' type='text/css'>
+
+    
+    <!-- jQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script type="text/javascript" src="js/lightslider.js"></script>
+    <script>
+         $(document).ready(function() {
+            $("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container for-nav">
+
+            <div class="navbar-header">
+                <a class="navbar-brand page-scroll" href="index.html"><img class="yp-logo" src="images/yourpeople-logo.png"><span class="green">Your</span><span class="red">People</span></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">&nbsp;Our Services<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="videography.html">Videography...</a></li>
+                            <li><a href="art.html">Art...........</a></li>
+                            <li><a href="graphic-design.html">Graphic Design</a></li>
+                            <li><a href="marketing.html">Marketing.....</a></li>
+                            <li><a href="music.html">Sound Design..</a></li>
+                            <li class="active"><a href="music.html">Music.........</a></li>
+                            <li><a href="photography.html">Photography...</a></li>
+                            <li><a href="animation.html">Animation.....</a></li>
+                            <li><a href="web-design.html">Web Design....</a></li>
+                            <li><a href="performance.html">Performance...</a></li>
+                            <li><a href="fashion.html">Fashion.......</a></li>
+                            <li><a href="editing.html">Editing.......</a></li>
+                            <li><a href="app-design.html">App Design....</a></li>
+                            <li><a href="writing.html">Writing.......</a></li>
+                            <li><a href="research.html">Research......</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="mission.html" class="red">Our Mission</a></li>
+                    <li><a href="people.html" class="red">Our People</a></li>
+                    <li><a href="clients.html" class="red">Our Clients</a></li>
+                    <li><a href="contact.html" class="red">Contact Us</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-lg-12 text-center bring-down">
+            <h2 class="service-text music-text">Music</h2>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <img class="bg-general bg-music" src="images/bg/music-bg.jpg">
+    </div>
+
+    <div id="wrapper-vid">
+
+        <div class="musics">
+            <iframe class="soundcloud" width="900" height="540" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/251889462&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        </div>
+    </div>
+
+
+    <footer>
+
+    <div class="container">
+        <div class="row">
+
+
+
+            <div class="profile">
+                <a href="torisweeney.html">
+                    <div class="col-xs-3 col-md-3">
+                        <img class="img-blur" src="images/headshots/ToriSweeney.png">
+                        <br>
+                        <p class="profile-text">
+                            Tori Sweeney
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="profile">
+                <a href="mathewwang.html">
+                    <div class="col-xs-3 col-md-3">
+                        <img class="img-blur" src="images/headshots/MathewWang.png">
+                        <br>
+                        <p class="profile-text">
+                            Mathew Wang
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="profile">
+                <a href="eddietaylor.html">
+                    <div class="col-xs-3 col-md-3">
+                        <img class="img-blur" src="images/headshots/EddieTaylor.png">
+                        <br>
+                        <p class="profile-text">
+                            Eddie Taylor
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="profile">
+                <a href="marcuscrow.html">
+                    <div class="col-xs-3 col-md-3">
+                        <img class="img-blur" src="images/headshots/MarcusCrow.png">
+                        <br>
+                        <p class="profile-text">
+                            Marcus Crow
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    </footer>
+
+</body>
+
+
+</html>
