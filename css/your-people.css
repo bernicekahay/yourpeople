@@ -71,7 +71,7 @@ img.yp-logo {
   transition: ease 0.5s;
 }
 
-.navbar-brand:hover span.green {
+/*.navbar-brand:hover span.green {
   color: #d7df21;
   animation:colorchange-inverse 3s infinite;
   transition: ease 0.5s;
@@ -81,20 +81,20 @@ img.yp-logo {
   color: #ed1c24;
   animation:colorchange 3s infinite;
   transition: ease 0.5s;
+}*/
+
+span.blue {
+	color: #04BFBF;
 }
 
-span.green {
-	color: #d7df21;
-}
-
-span.red {
-	color: #ed1c24;
+span.orange {
+	color: #FF6517;
 }
 
 .nav.navbar-nav.navbar-right li a {
   text-transform: uppercase;
   font-family: 'ocr';
-  color: #ed1c24;
+  color: #FF6517;
   transition: ease 0.5s;
   font-size: 13px;
 }
@@ -102,12 +102,13 @@ span.red {
 .nav.navbar-nav.navbar-right li a:hover {
   opacity: 0.5;
   transition: ease 0.5s;
-  animation:colorchange 3s infinite;
+  color: #04BFBF;
+/*  animation:colorchange 3s infinite;
   -moz-animation:colorchange 3s infinite;
-  -webkiit-animation:colorchange 3s infinite; 
+  -webkiit-animation:colorchange 3s infinite; */
 }
 
-@-moz-keyframes colorchange {
+/*@-moz-keyframes colorchange {
   0%  {color:red;}
   33% {color:green;}
   66% {color:#d7df21;}
@@ -133,7 +134,7 @@ span.red {
   33% {color: red;}
   66% {color: green;}
   100% {color: #d7df21;}
-}
+}*/
 
 .for-nav {
 	margin: 12px auto;
