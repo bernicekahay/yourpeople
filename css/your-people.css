@@ -1,0 +1,1101 @@
+@font-face {
+	font-family: "ocr";
+  	src: url(../fonts/ocr.ttf);
+}
+
+@font-face {
+  font-family: "filmstrip";
+    src: url(../fonts/filmstrip.otf);
+}
+@font-face {
+  font-family: "bulltoad-camera";
+    src: url(../fonts/bulltoad-camera.ttf);
+}
+@font-face {
+  font-family: "paintypaint";
+    src: url(../fonts/paintypaint.ttf);
+}
+@font-face {
+  font-family: "brandon-text";
+  src: url(../fonts/brandon-text-medium.otf);
+}
+@font-face {
+  font-family: "circuitboard";
+  src: url(../fonts/circuitboard.ttf);
+}
+@font-face {
+  font-family: "chintzy";
+  src: url(../fonts/chintzy.ttf);
+}
+@font-face {
+  font-family: "ldmusic";
+  src: url(../fonts/ldmusic.ttf);
+}
+
+h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+html, body {
+  height: 100%;
+	overflow: hidden;
+}
+
+.col-sm-4 {
+  text-align: center;
+}
+
+.col-sm-3 {
+  text-align: center;
+}
+
+/*BEGIN NAVBAR CSS*/
+.navbar {
+	background: rgba(255,255,255,0.8);
+	height: 65px;
+  border-bottom: rgba(255,255,255,0);
+}
+
+img.yp-logo {
+	float: left;
+	margin-top: -11px;
+	margin-right: 10px;
+  width: 35px;
+}
+
+.navbar-brand {
+  font-size: 18px;
+  font-family: 'ocr';
+  text-transform: uppercase;
+  transition: ease 0.5s;
+}
+
+/*.navbar-brand:hover span.green {
+  color: #d7df21;
+  animation:colorchange-inverse 3s infinite;
+  transition: ease 0.5s;
+}
+
+.navbar-brand:hover span.red {
+  color: #ed1c24;
+  animation:colorchange 3s infinite;
+  transition: ease 0.5s;
+}*/
+
+span.blue {
+	color: #04BFBF;
+}
+
+span.orange {
+	color: #FF6517;
+}
+
+.nav.navbar-nav.navbar-right li a {
+  text-transform: uppercase;
+  font-family: 'ocr';
+  color: #FF6517;
+  transition: ease 0.5s;
+  font-size: 13px;
+}
+
+.nav.navbar-nav.navbar-right li a:hover {
+  opacity: 0.5;
+  transition: ease 0.5s;
+  color: #04BFBF;
+/*  animation:colorchange 3s infinite;
+  -moz-animation:colorchange 3s infinite;
+  -webkiit-animation:colorchange 3s infinite; */
+}
+
+/*@-moz-keyframes colorchange {
+  0%  {color:red;}
+  33% {color:green;}
+  66% {color:#d7df21;}
+  100% {color: red;}
+}
+ 
+@-webkit-keyframes colorchange {
+  0%  {color:red;}
+  33% {color:green;}
+  66% {color:#d7df21;}
+  100% {color: red;}
+}
+
+@-moz-keyframes colorchange-inverse {
+  0% {color: #d7df21;}
+  33% {color: red;}
+  66% {color: green;}
+  100% {color: #d7df21;}
+}
+
+@-webkit-keyframes colorchange-inverse {
+  0% {color: #d7df21;}
+  33% {color: red;}
+  66% {color: green;}
+  100% {color: #d7df21;}
+}*/
+
+.for-nav {
+	margin: 12px auto;
+}
+
+.navbar-collapse {
+  padding-left: 0;
+}
+
+.services {
+	background: rgba(255,255,255,0.3);
+	position: absolute;
+	height: 300px;
+	width: 100%;
+	bottom: 0;
+}
+
+/*.dropdown-menu li:hover .sub-menu {
+  visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}*/
+
+/*END NAVBAR CSS*/
+
+
+/*index.html*/
+.rotate-notification {
+  z-index: -100;
+  opacity: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+}
+
+.background {
+  z-index: -1;
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+}
+
+.yp-background-left {
+  width: 45%;
+  height: 78%;
+  top: 18%;
+  left: -26%;
+  opacity: 0.4;
+}
+
+.yp-background-right {
+  width: 45%;
+  height: 78%;
+  top: 18%;
+  left: 81%;
+  opacity: 0.4;
+}
+
+.we-are-yourpeople {
+  z-index: 1;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.clouds {
+  opacity: 0.6;
+}
+
+h1.jumbotron {
+  font-size: 28px;
+  background-color: transparent;
+  font-family: 'ocr';
+  color: #ed1c24;
+}
+
+.videography {
+  position: fixed;
+  opacity: 0;
+  left: 0.2%;
+  top: 34.3%;
+  margin-left: 0%;
+  width: 5.8%;
+  height: 61.5%;
+}
+
+.videography:hover {
+  opacity: 1;
+  z-index: 0;
+}
+
+.art {
+  position: fixed;
+  opacity: 0;
+  left: 6.6%;
+  top: 58.8%;
+  margin-left: 0%;
+  width: 5.9%;
+  height: 36.9%;
+}
+
+.art:hover {
+  opacity: 1;
+}
+
+.graphic-design {
+  position: fixed;
+  opacity: 0;
+  left: 13%;
+  top: 28.3%;
+  margin-left: 0%;
+  width: 5.8%;
+  height: 67%;
+}
+
+.graphic-design:hover {
+  opacity: 1;
+}
+
+.marketing {
+  position: fixed;
+  opacity: 0;
+  left: 20.1%;
+  top: 35.5%;
+  margin-left: 0%;
+  width: 5.8%;
+  height: 60.2%;
+}
+
+.marketing:hover {
+  opacity: 1;
+}
+
+.sound-design {
+  position: fixed;
+  opacity: 0;
+  left: 26.68%;
+  top: 38.5%;
+  margin-left: 0%;
+  width: 5.8%;
+  height: 59%;
+}
+
+.sound-design:hover {
+  opacity: 1;
+}
+
+.music {
+  position: fixed;
+  opacity: 0;
+  left: 32.85%;
+  top: 46.1%;
+  margin-left: 0%;
+  width: 8.8%;
+  height: 49.2%;
+}
+
+.music:hover {
+  opacity: 1;
+}
+
+.photography {
+  position: fixed;
+  opacity: 0;
+  left: 42.5%;
+  top: 40.6%;
+  margin-left: 0%;
+  width: 5.8%;
+  height: 55%;
+}
+
+.photography:hover {
+  opacity: 1;
+}
+
+.animation {
+  position: fixed;
+  opacity: 0;
+  left: 48.8%;
+  top: 54.8%;
+  margin-left: 0%;
+  width: 5.2%;
+  height: 41.2%;
+}
+
+.animation:hover {
+  opacity: 1;
+}
+
+.web-design {
+  position: fixed;
+  opacity: 0;
+  left: 54.7%;
+  top: 37.8%;
+  margin-left: 0%;
+  width: 5.2%;
+  height: 57.5%;
+}
+
+.web-design:hover {
+  opacity: 1;
+}
+
+.performance {
+  position: fixed;
+  opacity: 0;
+  left: 60.6%;
+  top: 34.4%;
+  margin-left: 0%;
+  width: 5.4%;
+  height: 61%;
+}
+
+.performance:hover {
+  opacity: 1;
+}
+
+.fashion {
+  position: fixed;
+  opacity: 0;
+  left: 66.5%;
+  top: 38.7%;
+  margin-left: 0%;
+  width: 7.3%;
+  height: 56.8%;
+}
+
+.fashion:hover {
+  opacity: 1;
+}
+
+.editing {
+  position: fixed;
+  opacity: 0;
+  left: 74.2%;
+  top: 59.2%;
+  margin-left: 0%;
+  width: 5%;
+  height: 38%;
+}
+
+.editing:hover {
+  opacity: 1;
+}
+
+.app-design {
+  position: fixed;
+  opacity: 0;
+  left: 79.8%;
+  top: 27.4%;
+  margin-left: 0%;
+  width: 6.4%;
+  height: 69.5%;
+}
+
+.app-design:hover {
+  opacity: 1;
+}
+
+.writing {
+  position: fixed;
+  opacity: 0;
+  left: 86.65%;
+  top: 46.4%;
+  margin-left: 0%;
+  width: 6.5%;
+  height: 48.8%;
+}
+
+.writing:hover {
+  opacity: 1;
+}
+
+.research {
+  position: fixed;
+  opacity: 0;
+  left: 93.7%;
+  top: 51.9%;
+  margin-left: 0%;
+  width: 5.6%;
+  height: 43.6%;
+}
+
+.research:hover {
+  opacity: 1;
+}
+
+#wrapper-vid {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/*mission.html*/
+body#mission {
+  overflow: scroll;
+}
+
+.Courier-New {
+  font-family: 'Courier New';
+}
+
+.Arial-Black {
+  font-family: 'Arial Black';
+}
+
+.Helvetica {
+  font-family: 'Helvetica';
+}
+
+/*people.html*/
+body#people {
+  overflow: scroll;
+}  
+
+body#people p.profile-text {
+  color: black;
+}
+
+/*clients.html*/
+body#clients {
+  overflow-y: scroll;
+}
+
+/*contact.html*/
+img.fullscreen-bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/*Services Subpages*/
+h2.service-text {
+  font-size: 56px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 160px;
+}
+h2.videography-text {
+  font-size: 72px;
+  font-family: 'filmstrip';
+  color: white;
+  background: none;
+  width: 100%;
+}
+
+h2.photography-text {
+  font-family: 'brandon-text';
+}
+
+h2.art-text {
+  font-family: 'paintypaint';
+}
+
+h2.graphic-design-text {
+  font-family: 'circuitboard';
+}
+
+h2.web-design-text {
+  font-family: 'chintzy';
+}
+
+h2.music-text {
+  font-family: 'ldmusic';
+}
+
+.bring-up {
+  margin-top: -2%;
+}
+
+.bring-down {
+  margin-top: 4%;
+}
+
+.bring-down-more {
+  margin-top: 100px;
+}
+
+.profile {
+  margin-top: 10px;
+}
+
+p.profile-text {
+  font-family: 'brandon-text';
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.img-blur {
+  transition: ease 0.4s;
+}
+
+.img-blur:hover  {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  transition: ease 0.7s;
+}
+
+.profile:hover p.profile-text {
+  text-decoration: overline;
+}
+
+#hover-images {
+  display: none;
+}
+
+/*videography.html*/
+.videos {
+  text-align: center;
+  margin-top: 25px;
+}
+
+/*photography.html*/
+.bg-general {
+  opacity: 0.7;
+  margin-left: -535px;
+  margin-top: -325px;
+/*  height: 1120px;
+  width: 1866px;*/
+  position: absolute;
+  z-index: -1;
+}
+
+#wrapper {
+  width: 850px;
+  margin: 0 auto;
+}
+
+.demo {
+  margin-top: 70px;
+  width: 100%;
+  border: 1px solid white;
+}
+ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+li {
+    display: inline;
+    float: left;
+    margin-right: 6px;
+    cursor: pointer;
+}
+img.photo-images {
+    display: inline;
+    width: 100%;
+/*    height: 850px;*/
+}
+
+img.web-images {
+  height: 500px;
+}
+
+/*music.html*/
+.bg-music {
+  margin-top: -450px;
+  height: 1600px;
+  width: 2100px;
+}
+
+.musics {
+  text-align: center;
+  margin-top: 80px;
+}
+
+/*art.html*/
+#wrapper-square {
+  width: 550px;
+  margin: 0 auto;
+}
+
+/*photography.html*/
+.bg-general-square {
+  margin-left: -685px;
+  margin-top: -285px;
+}
+
+/*Headshots on bottom of services subpages*/
+footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  /*background-color: rgba(0,0,0,0.6);*/
+  background: -webkit-linear-gradient(rgba(255,255,255,0.01) 10%,rgba(128,128,128,0.9) 100%);
+}
+
+header {
+  text-align: center;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 1680px) {
+  img.img-blur {
+    width: 100px;
+  }
+
+  /*others*/
+  .bg-general {
+    margin-left: -475px;
+    margin-top: -310px;
+    width: 1770px;
+    height: 1100px;
+  }
+  #wrapper {
+    width: 800px;
+  }
+  .demo {
+    margin-top: 0px;
+  }
+  img.photo-images {
+      display: inline;
+      width: 100%;
+      height: 470px;
+  }
+
+  /*videography*/
+  .bg-vid {
+  margin-left: -475px;
+  margin-top: -280px;
+  width: 1770px;
+  height: 1200px;
+  }
+  .videos {
+    margin-top: 5px;
+  }
+  iframe.youtube {
+    height: 600px;
+  }
+
+  /*music*/
+  .bg-music {
+/*    margin-left: -435px;
+    margin-top: -10px;*/
+    margin-left: -435px;
+    margin-top: -320px;
+    height: 1200px;
+    width: 1800px;
+  }
+
+  .musics {
+    margin-top: 70px;
+  }
+  iframe.soundcloud {
+    width: 750px;
+    height: 420px;
+  }
+
+  /*art*/
+  #wrapper-square {
+  width: 550px;
+  }
+
+  /*graphic-design*/
+  .bg-general-square {
+    margin-left: -615px;
+    margin-top: -295px;
+  }
+
+  /*web-design*/
+  .bg-web { 
+    margin-top: -290px;
+  }
+
+  .demo-web {
+    margin-top: 40px;
+  }
+
+}
+
+/*people pages*/
+h1.page-header {
+  font-family: 'brandon-text';
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'brandon-text';
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1600px) {
+  img.img-blur {
+    width: 80px;
+  }
+  p.profile-text {
+    font-size: 12px;
+    }
+
+  /*others*/
+  .bg-general {
+    margin-left: -470px;
+    margin-top: -270px;
+    width: 1690px;
+    height: 955px;
+  }
+  #wrapper {
+    width: 750px;
+  }
+  .demo {
+    margin-top: 50px
+  }
+  img.photo-images {
+      height: 400px;
+  }
+
+  /*music*/
+  .bg-music {
+    margin-left: -450px;
+    margin-top: -350px;
+    height: 1200px;
+    width: 1800px;
+  }
+
+  .musics {
+    margin-top: 60px;
+  }
+
+  iframe.soundcloud {
+    height: 380px;
+  }
+
+  /*videography*/
+  .bg-vid {
+  margin-left: -420px;
+  margin-top: -250px;
+  width: 1600px;
+  height: 1000px;
+  }
+  iframe.youtube {
+    width: 900px;
+    height: 490px;
+  }
+
+  /*graphic-design*/
+  .bg-general-square {
+    margin-left: -580px;
+    margin-top: -240px;
+  }
+
+  /*web-design*/
+  .bg-web { 
+    margin-left: -465px;
+    margin-top: -250px;
+  }
+
+  .demo-web {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  p.profile-text {
+    font-size: 8px;
+  }
+
+  h2.service-text {
+    font-size: 48px;
+  }
+
+  /*others*/
+  .bg-general {
+    margin-left: -375px;
+    margin-top: -210px;
+    width: 1350px;
+    height: 730px;
+  }
+  #wrapper {
+    width: 600px;
+  }
+  .demo {
+    margin-top: 50px
+  }
+  img.photo-images {
+      height: 300px;
+  }
+
+  /*music*/
+  .musics {
+    margin-top: 10px;
+  }
+
+  /*videography*/
+  .bg-vid {
+  margin-left: -420px;
+  margin-top: -225px;
+  width: 1400px;
+  height: 810px;
+  }
+  iframe.youtube {
+    width: 700px;
+    height: 360px;
+  }
+
+  /*music*/
+  .bg-music {
+    margin-left: -500px;
+    margin-top: -290px;
+    height: 1000px;
+    width: 1750px;
+  }
+
+  .musics {
+    margin-top: 40px;
+  }
+
+  iframe.soundcloud {
+    height: 340px;
+  }
+
+  /*art*/
+  #wrapper-square {
+    width: 400px;
+  }
+
+  /*graphic-design*/
+  .bg-general-square {
+    margin-left: -480px;
+    margin-top: -195px;
+  }
+
+  /*web-design*/
+  .bg-web {
+    margin-left: -370px;
+    margin-top: -195px;
+/*    width: 1350px;
+    height: 750px;*/
+  }
+  .demo-web {
+    margin-top: 10px;
+  }
+
+}
+
+@media (max-width: 992px) {
+/*  .navbar-header {
+      float: none;
+  }
+
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      background: black;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 0px;
+      padding-bottom: 0px;
+  }
+  .collapse.in{
+      display:block !important;
+  }*/
+
+  .navbar-header {
+      float: none;
+  }
+
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      background: white;
+      border: 1px solid black;
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+
+  .we-are-yourpeople {
+    margin-top:  10px;
+  }
+  h1.jumbotron {
+    font-size: 18px;
+  }
+
+  .navbar {
+    height: 50px;
+  }
+
+  img.yp-logo {
+    margin-top: -6px;
+    width: 25px;
+  }
+
+  h2.service-text {
+    font-size: 32px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 65px;
+  }
+
+  .navbar-brand {
+    font-size: 14px;
+    font-family: 'ocr';
+    text-transform: uppercase;
+  }
+
+  .for-nav {
+    margin: 2px auto;
+  }
+
+  img.img-blur {
+    width: 50px;
+  }
+
+  /*others*/
+  .bg-general {
+    margin-left: -225px;
+    margin-top: -100px;
+    width: 800px;
+    height: 400px;
+  }
+  #wrapper {
+    width: 350px;
+  }
+  .demo {
+    margin-top: 10px;
+  }
+  img.photo-images {
+      display: inline;
+      width: 100%;
+      height: 180px;
+  }
+
+
+  /*videography*/
+  #wrapper-vid {
+    width: 600px;
+  }
+
+  .bg-vid {
+  margin-left: -220px;
+  margin-top: -90px;
+  width: 800px;
+  height: 450px;
+  }
+
+  .videos {
+    margin-top: 5px;
+  }
+
+  iframe.youtube {
+    width: 400px;
+    height: 200px;
+  }
+
+
+  /*music*/
+  .bg-music {
+/*    margin-left: -435px;
+    margin-top: -10px;*/
+    margin-left: -190px;
+    margin-top: -190px;
+    height: 600px;
+    width: 800px;
+  }
+
+  .musics {
+    margin-top: 10px;
+  }
+  iframe.soundcloud {
+    width: 350px;
+    height: 200px;
+  }
+
+  /*art*/
+  #wrapper-square {
+  width: 250px;
+  }
+
+  /*graphic-design*/
+  .bg-general-square {
+    margin-left: -280px;
+    margin-top: -90px;
+  }
+
+  /*web-design*/
+  .bg-web { 
+    margin-top: -110px;
+  }
+
+  .demo-web {
+    margin-top: 0px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .we-are-yourpeople {
+    margin-top: 50px;
+  }
+}
+/*
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {*/
+@media screen and (orientation:landscape) {
+  #container {
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+    width: /* screen width */ ;
+    height: /* screen height */ ;
+    overflow: scroll;
+  }
+}
+
+/*Display rotation notification on portrait*/
+@media (max-width: 618px) {
+  .rotate-notification {
+    z-index: 100;
+    opacity: 1;
+  }
+
+  .background {
+    z-index: -1;
+  }
+}
