@@ -42,6 +42,10 @@ html, body {
 	overflow: hidden;
 }
 
+body#login{
+  overflow: scroll;
+}
+
 .col-sm-4 {
   text-align: center;
 }
@@ -55,6 +59,11 @@ html, body {
 	background: rgba(255,255,255,0.8);
 	height: 65px;
   border-bottom: rgba(255,255,255,0);
+}
+
+/**For the login page.*/
+#loginNav {
+  background: rgba(255,255,255,0);
 }
 
 img.yp-logo {
@@ -162,6 +171,83 @@ span.orange {
 
 /*END NAVBAR CSS*/
 
+/**Start login page.**/
+.login-logo {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 15vw;
+  height: 15vw;
+}
+
+.login-logo img{
+  width: 100%;
+  height: 100%;
+}
+
+.login-title {
+  padding-top: 50px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'ocr';
+  font-size: 32px;
+}
+
+#login-title-no-padding {
+  padding-top: 20px;
+}
+
+.no-border {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
+}
+
+.no-border:focus {
+  border-color:#ccc;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.pages-container {
+  margin-top: 20px;
+}
+
+.pages-section {
+  font-family: 'ocr';
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.title {
+  width: 100%;
+  display: inline-block;
+}
+
+.description {
+  font-family: 'Helvetica';
+  display: inline-block;
+}
+
+.pages-image {
+  margin: 0 auto;
+  width: 100px;
+}
+
+.pages-image img{
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  margin-top: 20px;
+  width: 100%;
+}
 
 /*index.html*/
 .rotate-notification {
@@ -600,7 +686,6 @@ li {
 img.photo-images {
     display: inline;
     width: 100%;
-/*    height: 850px;*/
 }
 
 img.web-images {

@@ -23,17 +23,21 @@ if((!$validationCode[0])){
 	exit;
 }
 
-addPage($_POST);
+$success = addPage($_POST);
 require_once(__DIR__."/includes/header.php");
 ?>
+<div class = "login-logo">
+	<img class = "animated bounceIn" src="../../../images/YourPeopleLogo.png">
+</div>
+<div class = "login-title" id = "login-title-no-padding"> <?php echo $success?> <div>
 
 	<form class ="" action="index.php">
 		<div class="form-group">
 			<input type="submit" class="btn btn-primary" value="Return to Login">
 		</div>
-	</form>	
+	</form>
 
-<?php require_once(__DIR__."/../includes/footer.php"); ?>
+<?php require_once(__DIR__."/includes/footer.php"); ?>
 
 
 

@@ -16,21 +16,21 @@ require_once("css/header.php");
     
 
     <div id="hover-images"world/>
-        <a href="videography.html"><img class="videography" src="images/world/videography.png"></a>
-        <a href="art.html"><img class="art" src="images/world/art.png"></a>
-        <a href="graphic-design.html"><img class="graphic-design" src="images/world/graphic-design.png"></a>
-        <a href="marketing.html"><img class="marketing" src="images/world/marketing.png"></a>
-        <a href="music.html"><img class="sound-design" src="images/world/sound-design.png"></a>
-        <a href="music.html"><img class="music" src="images/world/music.png"></a>
-        <a href="photography.html"><img class="photography" src="images/world/photography.png"></a>
-        <a href="animation.html"><img class="animation" src="images/world/animation.png"></a>
-        <a href="web-design.html"><img class="web-design" src="images/world/web-design.png"></a>
-        <a href="performance.html"><img class="performance" src="images/world/performance.png"></a>
-        <a href="fashion.html"><img class="fashion" src="images/world/fashion.png"></a>
-        <a href="editing.html"><img class="editing" src="images/world/editing.png"></a>
-        <a href="app-design.html"><img class="app-design" src="images/world/app-design.png"></a>
-        <a href="writing.html"><img class="writing" src="images/world/writing.png"></a>
-        <a href="research.html"><img class="research" src="images/world/research.png"></a>
+        <a href="categories/videography.php"><img class="videography" src="images/world/videography.png"></a>
+        <a href="categories/art.php"><img class="art" src="images/world/art.png"></a>
+        <a href="categories/graphic-design.php"><img class="graphic-design" src="images/world/graphic-design.png"></a>
+        <a href="categories/marketing.php"><img class="marketing" src="images/world/marketing.png"></a>
+        <a href="categories/music.php"><img class="sound-design" src="images/world/sound-design.png"></a>
+        <a href="categories/music.php"><img class="music" src="images/world/music.png"></a>
+        <a href="categories/photography.php"><img class="photography" src="images/world/photography.png"></a>
+        <a href="categories/animation.php"><img class="animation" src="images/world/animation.png"></a>
+        <a href="categories/web-design.php"><img class="web-design" src="images/world/web-design.png"></a>
+        <a href="categories/performance.php"><img class="performance" src="images/world/performance.png"></a>
+        <a href="categories/fashion.php"><img class="fashion" src="images/world/fashion.png"></a>
+        <a href="categories/editing.php"><img class="editing" src="images/world/editing.png"></a>
+        <a href="categories/app-design.php"><img class="app-design" src="images/world/app-design.png"></a>
+        <a href="categories/writing.php"><img class="writing" src="images/world/writing.png"></a>
+        <a href="categories/research.php"><img class="research" src="images/world/research.png"></a>
     </div>
 
     <div class="container tada animated">
