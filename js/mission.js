@@ -4,8 +4,8 @@ $(function() {
     var insideSolution = true;
 
     var triggerHookText = 0.4;
-    var triggerHookMessage = 0.3;
-    var parDuration = 300;
+    var triggerHookMessage = 0.4;
+    var parDuration = 0;
 
     var controller = new ScrollMagic.Controller();
 
@@ -18,19 +18,17 @@ $(function() {
 
     var stickWe = new ScrollMagic.Scene({
         triggerElement: "div#we.message",
-        triggerHook: triggerHookText,
-        duration: parDuration
+        triggerHook: triggerHookText
     })
-    .setPin("div#we.message")
-    .on("end", function(e) {
+    .on("start", function(e) {
         if(insideWe) {
-            $("div#we.fade").velocity({opacity: 0});
-            $("h2#we.Arial-Black").velocity({opacity: 0});
-            $("div#we.important").velocity({opacity: .5});
+            $("div#we.fade").velocity({opacity: 0}, {duration: 200});
+            $("h2#we.title-text").velocity({opacity: 0}, {duration: 200});
+            $("div#we.important").velocity({opacity: .5}, {duration: 200});
         } else {
-            $("div#we.fade").velocity({opacity: 1});
-            $("h2#we.Arial-Black").velocity({opacity: 1});
-            $("div#we.important").velocity({opacity: 1});
+            $("div#we.fade").velocity({opacity: 1}, {duration: 200});
+            $("h2#we.title-text").velocity({opacity: 1}, {duration: 200});
+            $("div#we.important").velocity({opacity: 1}, {duration: 200});
         }
         insideWe = !insideWe;
     })
@@ -52,19 +50,17 @@ $(function() {
 
     var stickProblem = new ScrollMagic.Scene({
         triggerElement: "div#problem.message",
-        triggerHook: triggerHookText,
-        duration: parDuration
+        triggerHook: triggerHookText
     })
-    .setPin("div#problem.message")
-    .on("end", function(e) {
+    .on("start", function(e) {
        if(insideProblem) {
-            $("div#problem.fade").velocity({opacity: 0});
-            $("h2#problem.Arial-Black").velocity({opacity: 0});
-            $("div#problem.important").velocity({opacity: .5});
+            $("div#problem.fade").velocity({opacity: 0}, {duration: 200});
+            $("h2#problem.title-text").velocity({opacity: 0}, {duration: 200});
+            $("div#problem.important").velocity({opacity: .5}, {duration: 200});
         } else {
-            $("div#problem.fade").velocity({opacity: 1});
-            $("h2#problem.Arial-Black").velocity({opacity: 1});
-            $("div#problem.important").velocity({opacity: 1});
+            $("div#problem.fade").velocity({opacity: 1}, {duration: 200});
+            $("h2#problem.title-text").velocity({opacity: 1}, {duration: 200});
+            $("div#problem.important").velocity({opacity: 1}, {duration: 200});
         }
         insideProblem = !insideProblem;
     })
@@ -75,18 +71,20 @@ $(function() {
         triggerHook: triggerHookMessage
     })
     .on("enter", function () {
-      console.log("entered");
-      $("div#problem.important").css("opacity", 0);
+      console.log("helo enetere");
+
       $("div#we.important").text("Lorem ipsum dolor sit amet, consectetur \
       adipiscing elit. Proin dignissim urna sed lorem aliquet, sed tincidunt \
       tortor dignissim. Curabitur semper tempor cursus. Mauris sed consectetur est,");
+      $("div#problem.important").css("opacity", 0);
+      //$("div#problem.message-text").css("opacity", 0.5);
     })
     .on("leave", function () {
-      console.log("left");
+      console.log("helo asdf");
       $("div#we.important").text("Lorem ipsum dolor");
       $("div#problem.important").css("opacity", 0.5);
+
     })
-    //.setPin("div#problem.important")
     .addTo(controller);
 
     var stickSolution = new ScrollMagic.Scene({
@@ -94,16 +92,15 @@ $(function() {
         triggerHook: triggerHookText,
         duration: parDuration
     })
-    .setPin("div#solution.message")
-    .on("end", function(e) {
+    .on("start", function(e) {
         if(insideSolution) {
-            $("div#solution.fade").velocity({opacity: 0});
-            $("h2#solution.Arial-Black").velocity({opacity: 0});
-            $("div#solution.important").velocity({opacity: 0.5});
+            $("div#solution.fade").velocity({opacity: 0}, {duration: 200});
+            $("h2#solution.title-text").velocity({opacity: 0}, {duration: 200});
+            $("div#solution.important").velocity({opacity: 0.5}, {duration: 200});
         } else {
-            $("div#solution.fade").velocity({opacity: 1});
-            $("h2#solution.Arial-Black").velocity({opacity: 1});
-            $("div#solution.important").velocity({opacity: 1});
+            $("div#solution.fade").velocity({opacity: 1}, {duration: 200});
+            $("h2#solution.title-text").velocity({opacity: 1}, {duration: 200});
+            $("div#solution.important").velocity({opacity: 1}, {duration: 200});
         }
         insideSolution = !insideSolution;
     })
@@ -114,6 +111,7 @@ $(function() {
         triggerHook: triggerHookMessage
     })
     .on("enter", function () {
+      $("div#we.important").velocity({opacity: 1}, {duration: 200});
       $("div#solution.important").css("opacity", 0);
       $("div#we.important").text("Lorem ipsum dolor sit amet, consectetur \
       adipiscing elit. Proin dignissim urna sed lorem aliquet, sed tincidunt \
@@ -121,25 +119,11 @@ $(function() {
       asfasdf asdf adipiscing elit.");
     })
     .on("leave", function () {
+      $("div#we.important").velocity({opacity: 0.5}, {duration: 200});
       $("div#solution.important").css("opacity", 0.5);
       $("div#we.important").text("Lorem ipsum dolor sit amet, consectetur \
       adipiscing elit. Proin dignissim urna sed lorem aliquet, sed tincidunt \
       tortor dignissim. Curabitur semper tempor cursus. Mauris sed consectetur est,");
     })
-    //].setPin("div#solution.important")
     .addTo(controller);
-
-    var stickLink = new ScrollMagic.Scene({
-        triggerElement: "div#link.message",
-        triggerHook: 0.6
-    })
-    .setPin("div#link.message")
-    .on("enter", function (e) {
-        $("div#we.important").velocity({opacity: 1});
-    })
-    .on("leave", function (e) {
-        $("div#we.important").velocity({opacity: 0.5});
-    })
-    .addTo(controller);
-
 });

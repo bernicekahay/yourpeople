@@ -1,12 +1,19 @@
 div.message {
   margin-left: 20%;
   margin-right: 20%;
-  margin-bottom: 300px;
+  margin-top: 10%;
   opacity: 1;
+}
+
+div.message#link {
+  margin-top: 10%;
+  margin-bottom: 20%;
 }
 
 div.message-text {
   opacity: 1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 120%;
 }
 
 div.fade {
@@ -18,14 +25,16 @@ div.important {
   display: inline;
 }
 
-h2.Arial-Black {
-  font-size: 150%;
+h2 {
+  font-size: 200%;
+  font-family: 'Lora', serif;
+  font-style: italic;
 }
 
 h2#top-text {
-  font-size: 200%;
-  margin: 0;
-  font-weight: bolder;
+  font-size: 300%;
+  margin-top: 5%;
+  font-weight: 400;
 }
 
 div#we.important {
