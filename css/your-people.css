@@ -123,7 +123,7 @@ span.orange {
   66% {color:#d7df21;}
   100% {color: red;}
 }
- 
+
 @-webkit-keyframes colorchange {
   0%  {color:red;}
   33% {color:green;}
@@ -540,7 +540,7 @@ body#mission {
 /*people.html*/
 body#people {
   overflow: scroll;
-}  
+}
 
 body#people p.profile-text {
   color: black;
@@ -556,11 +556,11 @@ img.fullscreen-bg {
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
-  
+
   /* Set up proportionate scaling */
   width: 100%;
   height: auto;
-  
+
   /* Set up positioning */
   position: fixed;
   top: 0;
@@ -799,7 +799,7 @@ header {
   }
 
   /*web-design*/
-  .bg-web { 
+  .bg-web {
     margin-top: -290px;
   }
 
@@ -880,7 +880,7 @@ h3 {
   }
 
   /*web-design*/
-  .bg-web { 
+  .bg-web {
     margin-left: -465px;
     margin-top: -250px;
   }
@@ -1145,7 +1145,7 @@ h3 {
   }
 
   /*web-design*/
-  .bg-web { 
+  .bg-web {
     margin-top: -110px;
   }
 

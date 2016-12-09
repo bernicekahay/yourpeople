@@ -17,9 +17,9 @@
 
     <!-- Custom Fonts -->
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Lato" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:700,900,400,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700,900,400,500,300i' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" type="image/png" href="images/YourPeopleLogo.png"/>
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -70,4 +70,3 @@
         <!-- /.container-fluid -->
     </nav>
 </head>
-
