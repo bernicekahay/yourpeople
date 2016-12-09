@@ -17,14 +17,15 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:700,900,400,500' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" type="image/png" href="../../../images/YourPeopleLogo.png"/>
 
-    <link href="../../../css/lightslider.css" rel="stylesheet">
     <!-- jQuery -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="../../../js/bootstrap.min.js"></script>
     <!-- Lightslider Javscript -->
+    <link href="../../../css/lightslider.css" rel="stylesheet">
     <script type="text/javascript" src="../../../js/lightslider.js"></script>
 
+<script type="text/javascript" src="../../../js/lightslider.js"></script>
     <nav id="loginNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container for-nav">
             <!-- Brand and toggle get grouped for better mobile display -->

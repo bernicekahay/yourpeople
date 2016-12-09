@@ -6,7 +6,8 @@
 <?php $data = $person->fetch_assoc(); ?>
 <?php require_once(__DIR__."/../includes/pages-header.php"); ?>
 <body id = "login">
-	<div class = "login-title">Welcome <?php echo $username; ?>!</div>
+
+<div class = "login-title">Welcome <?php echo $username; ?>!</div>
 
 <div class = "pages-container">
 		<div class = "pages-section" id = "firstname">
@@ -68,7 +69,6 @@
 <div class = "pages-section" id = "slideshow">
 	<div class = "title">Gallery (5 Photos Max):</div>
 	<div id="wrapper-square">
-    	<div class="demo">
        		<div class="item">
             	<div class="clearfix">
                 	<ul id="image-gallery" class="gallery list-unstyled cS-hidden">
@@ -90,9 +90,9 @@
                		</ul>
             	</div>
         	</div>
-    	</div>
 	</div>
 </div>
+
 
 <div class = "pages-section" id = "video-section">
     <div class = "title">Videos (5 Videos Max):</div>
@@ -133,7 +133,6 @@
     </form>
 </div>
 
-
 <script>
      $(document).ready(function() {
         $("#content-slider").lightSlider({
@@ -143,7 +142,7 @@
         $('#image-gallery').lightSlider({
             gallery:true,
             item:1,
-            thumbItem:5,
+            thumbItem:9,
             slideMargin: 0,
             speed:500,
             auto:true,
@@ -155,7 +154,7 @@
             }  
         });
     });
-     
 </script>
 
 <?php require_once(__DIR__."/../includes/footer.php"); ?>
+
